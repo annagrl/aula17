@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Cute+Font&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box
+   }
+
+   body{
+       background-image: url("https://sm.ign.com/t/ign_br/screenshot/default/pokemon-i-choose-you-br-1510098874516-1280w-1535034107830-uu_q6mt.1200.jpg");
+       background-size: cover;
+    }
+
+  button{
+    position: relative;
+    padding: 8px 16px;
+    margin-left: 100px;
+    border-radius: 8px;
+    background-color: white;
+    transition-property: background-color;
+    transition-duration:0.5s;
+     }
+button:hover{
+    background-color:yellow;
+}
+   img{
+       width: 10%;
+       margin-top: 300px;
+       margin-left: 100px;
+       animation: myMove 2s;
+      
+   }
+   h1{
+    font-family: 'Cute Font', cursive;
+    margin-left: 100px;
+       animation: myText 2s;
+   }
+
+   @keyframes myMove {
+       from{
+        transform:scale(0) translateX(-100%) translateY(-100%) rotate(0);
+       } 
+       to{ 
+        transform: scale(100%) translateX(0) translateY(0) rotate(1);
+
+       }
+   }
+
+  @keyframes myText {
+    from{
+        transform: scale(1) skew(0) ;
+    }
+    
+    to{
+        transform: scale(1.1) skew(10deg);
+    }
+    
+    }
