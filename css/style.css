@@ -38,17 +38,15 @@ button:hover{
    }
 
    @keyframes myMove {
-    0% { 
+    from { 
         transform: translateX(0);
         opacity: 0%;
     }
-    50% {
-        transform: translateX(700%);
+    to {
+        transform: translateX(1000%);
         opacity: 100%;
     }
-    100% { 
-        transform: translateX(2000%);
-        opacity: 50%;
+   }
 
   @keyframes myText {
     from{
